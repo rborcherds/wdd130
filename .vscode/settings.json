@@ -4,6 +4,6 @@
     "editor.fontSize": 14,
     "editor.tabSize": 4,
     "editor.insertSpaces": true,
-    "editor.fontFamily": "'Fira Code', 'Fira Code Retina', 'monospace', monospace"
+    "editor.fontFamily": "'Fira Code', monospace"
     
 }
