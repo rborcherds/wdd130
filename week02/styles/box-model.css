@@ -27,5 +27,6 @@ cite {
     border-top: 1px dotted #fff;
     padding-top: 3px;
     text-align: right;
-    font-size: smaller;
+    font-size: 1.17em;
+    margin: 1.17em;
 }
