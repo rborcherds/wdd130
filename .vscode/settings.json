@@ -1,7 +1,8 @@
 {
     "workbench.colorTheme": "Adwaita Dark & default syntax highlighting & colorful status bar",
     "workbench.iconTheme": "vscode-great-icons",
-    "editor.fontSize": 14,
+    "editor.fontSize": 18,
+    "editor.zoomLevel": 1,
     "editor.tabSize": 4,
     "editor.insertSpaces": true,
     "editor.fontFamily": "'Fira Code', monospace"
