@@ -25,7 +25,7 @@
 # Built Visual Studio Code Extensions
 *.vsix
 
-#Files to exlude
+#Files to exclude
 wireframes/*
 wireframes/rafting-site.drawio
-wireframes/.$rafting-site.drawio.bkp
+wireframes/rafting-site-example.drawio
