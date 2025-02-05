@@ -132,14 +132,13 @@ header {
 }
 
 nav {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    justify-items: center;
     font-family: var(--heading-font);
-    text-decoration: none;
-    justify-content: space-around;
 }
 
 nav a {
-    display: flex;
     padding: 1rem;
     font-size: 1.25rem;
     font-family: var(--heading-font);
@@ -153,8 +152,8 @@ nav a:hover {
 }
 
 footer {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 3fr 1fr 1fr;
     align-items: center;
     padding: 1rem;
     background-color: #242321;
@@ -173,19 +172,17 @@ footer p {
 }
 
 /* Social media link styling */
-.sociallinks {
+.socialmedia {
     display: flex;
+    justify-content: flex-end;
     gap: 1rem;
 }
 
-.sociallinks img {
+.socialmedia img {
     width: 2rem;
 }
 
-.sociallinks a:hover {
-    /* This removes the background color from the nav a:hover rule for the social links in the footer. */
-    background-color: unset;
-}
+
 
 /* default grid layout for all pages */
 .grid {
