@@ -13,6 +13,8 @@
     /* Accent color 2 */
     --accent2-color: #37471e;
 
+    /* Accent color 3 */
+    --accent3-color: #254768;
 
     /* White color */
     --white: #f3eded;
@@ -23,6 +25,9 @@
     /* Button Background colors */
     --button-color: #714a0e;
     --button-color-hover: #f3a530;
+
+    --cta-button-color: #1bdd01;
+    --cta-button-color-hover: #04083e;
 
     /* Top Navigation Colors */
     /* Background color for navigation bar */
@@ -248,29 +253,28 @@ footer p {
 }
 
 .newsletter {
-    grid-column: 4/9;
-    grid-row: 9/11;
+    grid-column: 5/10;
+    grid-row: 7/9;
     justify-self: center;
     justify-items: center;
     display: flex;
     flex-direction: column;
-    margin: 1em 0;
+    background-color: var(--accent3-color);
+    padding: 0 2em;
+    border-radius: 1.5em;
 }
 
 .newsletter-form {
     display: flex;
     flex-direction: column;
-    background-color: var(--accent1-color);
     color: var(--white);
-    margin: 1em 0;
-    padding: 1em 0;
+    margin: 0 0 1em 0;
 }
 
 .newsletter p {
     justify-self: center;
     font-size: 1.5em;
-    color: var(--black);
-    margin: 1em 0 0 0;
+    color: var(--white);
 }
 
 .newsletter-form .field-grid {
@@ -283,7 +287,7 @@ footer p {
 
 .newsletter-form label {
     grid-column: 1;
-    grid-row: 1;
+    
     text-align: right;
     color: var(--white);
     margin: 0;
@@ -291,16 +295,18 @@ footer p {
 
 .newsletter-form input {
     grid-column: 2;
-    grid-row: 1;
+    
 }
 
 .newsletter-form button {
-    background-color: var(--button-color);
+    background-color: var(--cta-button-color);
+    color: var(--cta-button-color-hover);
     padding: .5em 1em
 }
 
 .newsletter-form button:hover {
     background-color: var(--button-color-hover);
+    color: var(--cta-button-color);
 }
 
 .card {
@@ -918,4 +924,6 @@ select:focus {
 .size-6 {
     width: 1em;
     height: 1em;
+    fill: #fff;
+    stroke: #fff
 }
