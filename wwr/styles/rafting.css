@@ -927,3 +927,8 @@ select:focus {
     fill: #fff;
     stroke: #fff
 }
+
+nav a>.size-6:hover, .size-6:hover {
+    stroke: #484029;
+    fill: #484029;
+}
