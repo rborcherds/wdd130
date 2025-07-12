@@ -1,7 +1,6 @@
 :root {
     --paragraph-font: "Anek Bangla", sans-serif;
     --nav-font: "Allerta", sans-serif;
-
     --primary-color: #4682b4;   /* Steelblue color */
 
 }
@@ -16,7 +15,6 @@
 
 body {
     font-family: var(--paragraph-font);
-    font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
     letter-spacing: 1px;
@@ -113,11 +111,9 @@ main p:nth-of-type(5) {
 
 
 aside {
-
     margin: 10px 0;
     border: 1px solid #b71234;
     padding: 1em;
-    background-color: none;
     color: #1a044e;
     grid-column: 1;
     grid-row: 1/3;
