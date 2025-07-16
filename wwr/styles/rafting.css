@@ -58,7 +58,6 @@
 ****************************************/
 body {
     font-family: var(--paragraph-font);
-    font-optical-sizing: auto;
     font-weight: 400;
 }
 
