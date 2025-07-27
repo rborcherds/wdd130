@@ -142,7 +142,7 @@ nav {
     font-family: var(--heading-font);
 }
 
-nav a {
+.navitem {
     padding: 1rem;
     font-size: 1.25rem;
     font-family: var(--heading-font);
@@ -151,7 +151,7 @@ nav a {
     align-items: center;
 }
 
-nav a:hover {
+.navitem:hover {
     background-color: #fff;
     color: #484029;
 }
