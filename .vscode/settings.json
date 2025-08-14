@@ -1,4 +1,5 @@
 {
+    
     "workbench.colorTheme": "Adwaita Dark & default syntax highlighting & colorful status bar",
     "workbench.iconTheme": "vscode-great-icons",
     "editor.fontSize": 16,
@@ -9,5 +10,4 @@
     "cSpell.words": [
         "socialmedia"
     ]
-    
 }
