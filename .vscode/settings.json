@@ -9,5 +9,7 @@
     "html.format.maxPreserveNewLines": 2,
     "html.format.wrapLineLength": 100,
     "html.format.wrapAttributesIndentSize": 2,
-   "files.autoSave": "onFocusChange",
+    "files.autoSave": "onFocusChange",
+    "workbench.colorTheme": "Night Owl",
+    "workbench.preferredDarkColorTheme": "Visual Studio Dark",
 }

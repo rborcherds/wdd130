@@ -1,3 +1,50 @@
+/* Root CSS variables for easy theme management */
+:root {
+
+  /* Dark color for primary text */
+  --primary-color: #4d4c49;
+
+  /* Secondary color, slightly lighter */
+  --secondary-color: #484029;
+
+  /* Accent color 1 */
+  --accent1-color: #484029;
+
+  /* Accent color 2 */
+  --accent2-color: #37471e;
+
+  /* Accent color 3 */
+  --accent3-color: #254768;
+
+  /* White color */
+  --white: #f3eded;
+
+  /* Black color */
+  --black: #0e0c0c;
+
+  /* Button Background colors */
+  --button-color: #714a0e;
+  --button-color-hover: #f3a530;
+
+  --cta-button-color: #1bdd01;
+  --cta-button-color-hover: #04083e;
+
+  /* Top Navigation Colors */
+  /* Background color for navigation bar */
+  --nav-background-color: var(--accent2-color);
+  /* Color for navigation links */
+  --nav-link-color: #fff;
+  /* Hover color for links */
+  --nav-hover-link-color: var(--accent2-color);
+  /* Background color on hover for navigation links */
+  --nav-hover-background-color: #fff;
+
+  /* Font for headings */
+  --heading-font: 'Arvo', 'sans-serif';
+  /* Font for paragraphs */
+  --paragraph-font: 'Oswald', 'sans-serif';
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -14,6 +61,7 @@ main,
 footer {
   width: 840px;
   margin: 0 auto;
+  least 10 images are required
 }
 
 h1,
@@ -73,4 +121,11 @@ h1 {
 .hero article img {
   float: right;
   width: 125px;
+}
+
+.nav {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  justify-content: space-around;
 }
