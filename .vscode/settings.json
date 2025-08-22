@@ -1,6 +1,13 @@
 {
-  // Auto Save after delay (1000 ms = 1 second)
-  "files.autoSave": "afterDelay",
-  "files.autoSaveDelay": 1000,
-  "liveServer.settings.port": 5501,
+    "editor.formatOnSave": true,
+    "editor.formatOnPaste": true,
+    "editor.defaultFormatter": "vscode.html-language-features",
+    "css.format.enable": true,
+    "css.format.maxPreserveNewLines": 2,
+    "css.format.spaceAroundSelectorSeparator": true,
+    "html.format.enable": true,
+    "html.format.maxPreserveNewLines": 2,
+    "html.format.wrapLineLength": 100,
+    "html.format.wrapAttributesIndentSize": 2,
+   "files.autoSave": "onFocusChange",
 }
