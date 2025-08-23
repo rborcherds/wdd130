@@ -13,5 +13,5 @@
     "workbench.colorTheme": "Night Owl",
     "workbench.preferredDarkColorTheme": "Visual Studio Dark",
     "fiveServer.port": 5501,
-    "git.enableCommitSigning": false
+    "git.enableCommitSigning": true
 }
