@@ -27,6 +27,19 @@ a {
     text-decoration: none;
 }
 
+p {
+    padding: 1em 0;
+    font-family: var(--paragraph-font);
+}
+
+img {
+    width: 100%;
+    height: auto;
+    border: 4px solid var(--primary-color);
+    padding: 1rem;
+    box-shadow: .4rem .4rem 1rem rgba(0, 0, 0, .3);
+}
+
 header,
 .grid,
 footer {
@@ -49,6 +62,7 @@ nav {
 }
 
 nav a {
+    display: block;
     color: white;
     padding: 1em 3em;
 }
@@ -59,17 +73,6 @@ ul a {
 
 h1 {
     color: var(--primary-color);
-}
-
-img {
-    width: 100%;
-    border: 4px solid var(--primary-color);
-}
-
-p {
-    padding: 1em 0;
-    font-family: var(--paragraph-font);
-    ;
 }
 
 .grid {
@@ -114,13 +117,20 @@ main p:nth-of-type(5) {
 }
 
 aside {
+    width: 100%;
     margin: 10px 0;
     border: 1px solid #b71234;
     padding: 1em;
+    background-color: #cccaca;
     color: #1a044e;
     grid-column: 1;
     grid-row: 1/3;
     align-self: center;
+}
+
+aside img {
+    width: 200px;
+    height: auto;
 }
 
 ul {
@@ -132,6 +142,9 @@ ul > li {
 }
 
 footer {
+    margin-top: 4rem;
+    border-top: 1px solid white;
+    text-align: center;
     background-color: steelblue;
     color: white;
     padding: 1em 2em;
