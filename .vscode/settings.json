@@ -12,4 +12,5 @@
     "files.autoSave": "onFocusChange",
     "workbench.colorTheme": "Night Owl",
     "workbench.preferredDarkColorTheme": "Visual Studio Dark",
+    "fiveServer.port": 5501,
 }

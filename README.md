@@ -1,2 +1,2 @@
-# WDD 130 Starting Template Repository
-This repository is a starting template for students in WDD 130.
+# WDD 130 Example of work for BYU Pathway Worldwide
+This repository is an example of all the work that the student will do in WDD 130.
