@@ -1,4 +1,6 @@
 {
+    "editor.fontSize": 18,
+    "window.zoomLevel": 1,
     "editor.formatOnSave": true,
     "editor.formatOnPaste": true,
     "editor.defaultFormatter": "vscode.html-language-features",
@@ -13,5 +15,5 @@
     "workbench.colorTheme": "Tomorrow Night Blue",
     "workbench.preferredDarkColorTheme": "Visual Studio Dark",
     "fiveServer.port": 5501,
-    "git.enableCommitSigning": false
+    "git.enableCommitSigning": true
 }
