@@ -1,9 +1,11 @@
 {
+    // Editor settings
     "editor.fontSize": 18,
     "window.zoomLevel": 2,
     "editor.formatOnSave": true,
     "editor.formatOnPaste": true,
     "editor.defaultFormatter": "vscode.html-language-features",
+    "editor.minimap.enabled": false,
     "css.format.enable": true,
     "css.format.maxPreserveNewLines": 2,
     "css.format.spaceAroundSelectorSeparator": true,
@@ -11,9 +13,30 @@
     "html.format.maxPreserveNewLines": 2,
     "html.format.wrapLineLength": 100,
     "html.format.wrapAttributesIndentSize": 2,
+    // Explorer settings - show only folders view
+    "explorer.fileNesting.enabled": true,
+    "explorer.fileNesting.expand": false,
+    "explorer.compactFolders": false,
+    "explorer.decorations.colors": false,
+    "explorer.decorations.badges": false,
+    "explorer.openEditors.minVisible": 0,
+    "outline.showFiles": false,
+    "timeline.showView": false,
+    "explorer.autoOpenDroppedFile": false,
+    // Auto Save when focus changes (allows formatOnSave to work)
     "files.autoSave": "onFocusChange",
+    // Theme settings
     "workbench.colorTheme": "Tomorrow Night Blue",
     "workbench.preferredDarkColorTheme": "Visual Studio Dark",
+    // Live and Live/Five Server settings
     "fiveServer.port": 5501,
+    "fiveServer.injectBody": false,
+    // Git settings for beginners - simplify source control
+    "git.enableSmartCommit": true, // automatically staged
+    "git.confirmSync": false,
+    "git.autofetch": true,
+    // "git.postCommitCommand": "sync",
+    "scm.defaultViewMode": "list",
+    "scm.repositories.visible": 0,
     "git.enableCommitSigning": false
 }
