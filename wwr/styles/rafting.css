@@ -2,32 +2,38 @@
 :root {
 
   /* Dark color for primary text */
-  --primary-color: #4d4c49;
+  --primary-color: #1157ab;
 
   /* Secondary color, slightly lighter */
-  --secondary-color: #484029;
+  --secondary-color: #622E30;
 
   /* Accent color 1 */
-  --accent1-color: #484029;
+  --accent1-color: #C04647;
 
   /* Accent color 2 */
-  --accent2-color: #37471e;
+  --accent2-color: #3d816a;
 
   /* Accent color 3 */
-  --accent3-color: #254768;
+  --accent3-color: #624d1c;
+
+  /* Accent color 4 */
+  --accent4-color: #b0e6fc;
 
   /* White color */
-  --white: #f3eded;
+  --white: #fff6f6;
 
   /* Black color */
   --black: #0e0c0c;
 
   /* Button Background colors */
-  --button-color: #714a0e;
+  --button-background-color: #00d148;
+  --button-color: #0e1e20;
   --button-color-hover: #f3a530;
 
-  --cta-button-color: #1bdd01;
+  --cta-button-color: #f2f2f2;
+  --cta-button-background-color: #912727;
   --cta-button-color-hover: #04083e;
+  --cta-button-background-color-hover: #f3a530;
 
   /* Top Navigation Colors */
   /* Background color for navigation bar */
@@ -121,7 +127,7 @@ a {
 header,
 main,
 footer {
-  max-width: 1024px;
+  max-width: 1248px;
   margin: auto;
 }
 
@@ -130,7 +136,7 @@ header {
   display: grid;
   grid-template-columns: 200px auto;
   align-items: center;
-  background-color: #484029;
+  background-color: var(--primary-color);
   color: var(--white);
 }
 
@@ -207,9 +213,9 @@ footer p {
 
 /* Button styling */
 .button-box {
-  background-color: var(--button-color);
+  background-color: var(--button-background-color-color);
   font-size: 1.5em;
-  color: var(--white);
+  color: var(--button-color);
   border-radius: 20px;
   padding: 1rem 2rem;
   justify-self: center;
@@ -223,6 +229,24 @@ footer p {
   background-color: var(--button-color-hover);
 }
 
+.cta-button {
+  background-color: var(--cta-button-background-color);
+  font-size: 1.5em;
+  color: var(--cta-button-color);
+  border-radius: 20px;
+  padding: 1rem 2rem;
+  justify-self: center;
+  align-self: center;
+  min-width: 15rem;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+.cta-button:hover {
+  background-color: var(--cta-button-background-color-hover);
+  color: var(--cta-button-color-hover);
+}
+
 /***************************************
 *
 *   defaults for all pages - End
@@ -234,8 +258,15 @@ footer p {
   justify-content: center;
 }
 
+.home-heading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+}
+
 .home-title {
-  margin: 1rem 0;
+  /* margin: 1rem 0; */
   color: var(--white);
   background-color: #13181475;
   justify-self: center;
@@ -245,14 +276,18 @@ footer p {
 }
 
 .home-subtitle {
-  margin: 20px 0;
+  /* margin: 20px 0; */
   color: var(--white);
   background-color: #13181475;
   justify-self: center;
 }
 
+.book {
+  margin: 2rem 0;
+}
+
 .newsletter {
-  grid-column: 5/10;
+  grid-column: 4/11;
   grid-row: 7/9;
   justify-self: center;
   justify-items: center;
@@ -368,7 +403,7 @@ footer p {
   grid-column: 7/12;
   grid-row: 5/7;
   color: var(--white);
-  background-color: var(--white);
+  background-color: var(--accent4-color);
   padding: 35px;
   box-shadow: 5px 5px 10px #6f7364;
   line-height: 1.5em;
@@ -626,7 +661,6 @@ label {
   margin-top: 20px;
   margin-bottom: 5px;
   color: #004d4a;
-  letter-spacing: .5px;
 }
 
 .signup {
@@ -645,8 +679,8 @@ select:focus {
 .submit {
   padding: 1.5em;
   margin: 1em;
-  background-color: #040466;
-  color: #f3f3f3;
+  background-color: var(--button-background-color);
+  color: var(--button-color);
   border: 1px solid #3e3e3e;
   box-shadow: 5px 3px 3px #000;
   border-radius: 25px;
