@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Example</title>
+    <meta name="description" content="This is an example quiz form">
+    <meta name="author" content="Ralph Borcherds">
+    <link rel="stylesheet" href="styles/quiz.css">
+</head>
+
+<body>
+
+    <main>
+        <h1>Quiz Form Example</h1>
+        <form action="#">
+            <fieldset>
+                <!-- <legend>Quiz</legend> -->
+                <label for="q1"><span class="number">1.</span> What does the acronym CSS stand
+                    for?</label>
+                <input type="text" id="q1" name="q1">
+
+                <label for="q2"><span class="number">2.</span> How are ID and Class attributes
+                    selected in CSS?</label>
+                <textarea id="q2" name="q2"></textarea>
+
+                <label for="q3"><span class="number">3.</span> Which of the following are valid CSS
+                    comments?</label>
+                <select id="q3" name="q3">
+                    <option value="0" selected disabled>Choose One ...</option>
+                    <option value="1">/* This is a comment */</option>
+                    <option value="2">// This is a comment</option>
+                    <option value="3"># This is a comment</option>
+                    <option value="4">&lg;!-- This is a comment --&gt;</option>
+                </select>
+                <label for="q4"><span class="number">4.</span> What is the bottom margin for this
+                    given declaration?</label>
+                <p class="code">margin: 10px 5px 15px;</p>
+                <input type="text" id="q4" name="q4">
+            </fieldset>
+            <button type="submit">Submit Quiz</button>
+        </form>
+
+    </main>
+</body>
+</html>

@@ -1,0 +1,57 @@
+main {
+    width: 700px;
+    margin: 0 auto;
+    background-color: #d3d3d3;
+    padding: 1em;
+}
+
+fieldset {
+    border: 2px solid black;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input,
+select,
+textarea {
+    font-size: 1.5rem;
+    padding: 5px;
+    border: 2px solid black;
+    border-radius: 5px;
+    width: 80%;
+    margin: 0 auto 1rem auto;
+}
+
+.code {
+    background-color: #333;
+    color: #ddd;
+    padding: 1rem;
+    width: fit-content;
+    margin: .5rem auto .5rem auto;
+    padding: .5rem;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #09014b;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 20px;
+    width: 100%;
+    font-size: 2rem;
+    padding: 1.5rem;
+    font-weight: bold;
+}
+
+.number {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #09014b;
+    font-style: italic;
+}
