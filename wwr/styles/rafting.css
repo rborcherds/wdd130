@@ -213,7 +213,7 @@ footer p {
 
 /* Button styling */
 .button-box {
-  background-color: var(--button-background-color-color);
+  background-color: var(--button-background-color);
   font-size: 1.5em;
   color: var(--button-color);
   border-radius: 20px;
