@@ -842,7 +842,7 @@ select:focus {
 
 .price-footer {
   margin-top: 3rem;
-  background-color: unset;
+  background-color: var(--white);
   display: block;
   margin: 0 0 1rem 0;
 }
