@@ -190,6 +190,10 @@ footer p {
   gap: 1rem;
 }
 
+.socialmedia a {
+  text-decoration: none;
+}
+
 .socialmedia img {
   width: 2rem;
 }
