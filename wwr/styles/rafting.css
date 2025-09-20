@@ -664,7 +664,7 @@ figcaption {
 .contact {
   display: flex;
   flex-direction: column;
-  grid-column: 1/7;
+  grid-column: 7/13;
   grid-row: 2/4;
   /* margin: 2rem 3rem; */
   background-color: rgb(222 249 255 / 88%);
@@ -722,7 +722,7 @@ select:focus {
 }
 
 .submit {
-  padding: 1.5em;
+  padding: 1em;
   margin: 1em;
   background-color: var(--button-background-color);
   color: var(--button-color);
@@ -735,30 +735,30 @@ select:focus {
 }
 
 .address {
-  grid-column: 7/13;
-  grid-row: 2/4;
+  grid-column: 1/-1;
+  grid-row: 1;
   display: grid;
   /* margin: 2rem 3rem; */
-  background-color: rgb(9, 7, 17);
+  /* background-color: rgb(9, 7, 17); */
   padding: 1rem 0;
+  justify-items: center;
+  color: var(--white);
+  font-size: 1.5rem;
 }
 
-.address h2 {
-  color: #fff;
+.address h1 {
+
+  color: var(--white);
 }
 
-.add-phone {
-  grid-row: 2;
-
-}
-
-.add-phone a,
-.add-phone address {
-  color: #fff;
-  font-size: 24px;
-  font-weight: 500;
-  display: block;
+.address a {
+  color: var(--white);
   padding: 0.5em;
+}
+
+.map {
+  grid-column: 1/7;
+  grid-row: 2/4;
 }
 
 .gmap {
@@ -770,6 +770,12 @@ select:focus {
 
 .employees {
   grid-column: 1/-1;
+}
+
+.employees h2 {
+  grid-column: 1/-1;
+  justify-self: center;
+  padding: 1em 0;
 }
 
 .employee {
