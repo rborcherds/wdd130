@@ -145,9 +145,10 @@ header {
 }
 
 nav {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  justify-items: center;
+  /* display: grid; */
+  /* grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); */
+  display: flex;
+  justify-content: space-around;
   font-family: var(--heading-font);
 }
 
@@ -257,7 +258,11 @@ footer p {
 *
 ****************************************/
 
-/* Homepage Styling */
+/***************************************
+*
+*   Homepage Styling - Begin
+*
+****************************************/
 .hero-msg {
   justify-content: center;
 }
@@ -419,9 +424,15 @@ footer p {
   line-height: 1em;
 }
 
+/***************************************
+*
+*   Homepage Styling - End
+*
+****************************************/
+
 /*************************************
 *
-*   Modal CSS
+*   Modal CSS - Display wireframe images
 *
 **************************************/
 
@@ -484,7 +495,18 @@ footer p {
   color: black;
 }
 
-/* about us styling */
+/***************************************
+*
+*   Modal CSS - End
+*
+****************************************/
+
+/***************************************
+*
+*   About Us styling - Begin
+*
+****************************************/
+
 .abs-heading1 {
   position: absolute;
   top: 10px;
@@ -606,11 +628,16 @@ figcaption {
   margin: 50px 0;
 }
 
-/*******************************************
+/***************************************
 *
-*           CSS for Contact Us
+*   about us styling - end 
 *
-*******************************************/
+****************************************/
+/***************************************
+*
+*    CSS for Contact Us - Begin
+*
+***************************************/
 
 .contactus {
   margin-top: 2rem;
@@ -755,9 +782,16 @@ select:focus {
 
 /*******************************************
 *
-*               Trips Page CSS
+*        Contact Us CSS - End
 *
 *******************************************/
+
+/*******************************************
+*
+*         Trips Page CSS - Begin
+*
+*******************************************/
+
 .trips-grid {
   display: grid;
   grid-template-columns: 2fr 1fr 4fr;
@@ -861,11 +895,17 @@ select:focus {
   font-size: 1.25em;
 }
 
-/**********************************************
+/*******************************************
 *
-*   Grid Layout placements
+*               Trips Page CSS - End
 *
-**********************************************/
+*******************************************/
+
+/*******************************************
+*
+*   Grid Layout placements definitions
+*
+*******************************************/
 .cols12 {
   grid-column: 1/13;
 }
@@ -958,15 +998,8 @@ select:focus {
   grid-row: 7/9;
 }
 
-.size-6 {
-  width: 1em;
-  height: 1em;
-  fill: #fff;
-  stroke: #fff
-}
-
-nav a > .size-6:hover,
-.size-6:hover {
-  stroke: #484029;
-  fill: #484029;
-}
+/*******************************************
+*
+*   Grid Layout placements definitions - End
+*
+*******************************************/
