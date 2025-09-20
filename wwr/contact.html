@@ -33,19 +33,23 @@
             <h1 class="center">Contact Us Page</h1>
             <form action="#">
                 <fieldset class="contact-fields">
-                    <label for="name">Name:</label>
+                    <label for="name" class="right">Name:</label>
                     <input type="text" id="name" name="from">
-                    <label for="email">e-Mail</label>
+                    <label for="email" class="right">e-Mail</label>
                     <input type="email" name="email" id="email">
-                    <label for="reason">Reason for contacting us?</label>
-                    <select name="reason" id="reason">
-                        <option value="" selected disabled>-- Please select One -- </option>
-                        <option value="general">General Inquiry</option>
-                        <option value="reservation">Reservation Question </option>
-                        <option value="suggestion">Website Suggestion/option>
-                    </select>
-                    <label for="comment">Please enter your comment:</label>
-                    <textarea name="comment" id="comment" cols="35" rows="10"></textarea>
+                    <fieldset class="reason">
+                        <legend>Reason for contacting us?</legend>
+                        <input type="radio" name="general" id="general">
+                        <label for="general">General Inquiry</label>
+                        <input type="radio" name="reservation" id="reservation">
+                        <label for="reservation">Reservation Inquiry</label>
+                        <input type="radio" name="suggestion" id="suggestion">
+                        <label for="suggestion">General Suggestion</label>
+                    </fieldset>
+
+                    <label for="comment" class="cols-all">Please enter your comment:</label>
+                    <textarea name="comment" id="comment" cols="35" rows="10"
+                      class="cols-all"></textarea>
                     <div class="signup">
                         <input type="checkbox" name="subscribe" id="newsletter">
                         <label for="newsletter">Please subscribe me to the monthly

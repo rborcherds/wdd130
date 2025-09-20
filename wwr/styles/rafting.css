@@ -75,10 +75,12 @@ h5,
 h6 {
   font-family: var(--heading-font);
   color: var(--primary-color);
+  padding: .5em;
 }
 
 h1 {
   font-size: 3rem;
+
 }
 
 h2 {
@@ -189,6 +191,7 @@ footer p {
   display: flex;
   justify-content: flex-end;
   gap: 1rem;
+  grid-column: -1;
 }
 
 .socialmedia a {
@@ -668,9 +671,10 @@ figcaption {
 }
 
 .contact-fields {
-  display: flex;
-  flex-direction: column;
-  padding: 20px;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  padding: 1rem;
+  gap: 10px 20px;
 }
 
 input,
@@ -688,13 +692,23 @@ input[type="checkbox"] {
   margin: 1rem 0;
 }
 
-label {
-  margin-top: 20px;
-  margin-bottom: 5px;
-  color: #004d4a;
+.right {
+  justify-self: right
+}
+
+.reason {
+  grid-column: 1/-1;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: 1rem 1fr;
+  gap: 1rem;
+  align-items: center;
 }
 
 .signup {
+  grid-column: 1/-1;
   margin-top: 20px;
   margin-bottom: 5px;
 }
@@ -906,6 +920,10 @@ select:focus {
 *   Grid Layout placements definitions
 *
 *******************************************/
+.cols-all {
+  grid-column: 1/-1;
+}
+
 .cols12 {
   grid-column: 1/13;
 }
