@@ -667,7 +667,7 @@ figcaption {
   grid-column: 7/13;
   grid-row: 2/4;
   /* margin: 2rem 3rem; */
-  background-color: rgb(222 249 255 / 88%);
+  background-color: rgba(5, 102, 123, 0.6);
 }
 
 .contact-fields {
@@ -759,6 +759,8 @@ select:focus {
 .map {
   grid-column: 1/7;
   grid-row: 2/4;
+  border: 2px solid var(--primary-color);
+  box-shadow: 5px 5px 10px var(--primary-color);
 }
 
 .gmap {
