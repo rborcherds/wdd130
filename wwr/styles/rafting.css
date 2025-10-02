@@ -39,9 +39,6 @@ footer {
 }
 
 h1,
-border-radius: 10px;
-font-size: 2rem;
-
 h2 {
     font-family: var(--heading-font);
     color: var(--heading-color);
