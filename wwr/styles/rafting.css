@@ -165,3 +165,89 @@ footer {
     grid-template-columns: 3fr 1fr;
     align-items: center;
 }
+
+.contact-main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+.contact-info {
+    grid-column: 1 / -1;
+    justify-self: center;
+    text-align: center;
+}
+
+.gmap {
+    grid-column: 1;
+    grid-row: 2;
+    border: 0;
+}
+
+.contact-form {
+    grid-column: 2;
+    grid-row: 2;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-name {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    gap: 1rem;
+    align-items: center;
+    margin-bottom: 1rem;
+    border: none;
+}
+
+.contact-name label {
+    grid-column: 1;
+    /* justify-self: end; */
+}
+
+.contact-name input {
+    grid-column: 2;
+}
+
+.contact-purpose {
+    display: grid;
+    grid-template-columns: 1em auto;
+    gap: .25em .5em;
+    align-items: center;
+    margin-bottom: 1rem;
+    border: none;
+}
+
+.contact-newsletter {
+    display: grid;
+    grid-template-columns: 1em auto;
+    gap: .25em .5em;
+    align-items: center;
+    margin: 1rem 0;
+    border: none;
+}
+
+.btn-submit {
+    padding: 1rem;
+    font-size: 1.25rem;
+    background-color: var(--accent2-color);
+    color: var(--white);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    border: none;
+    border-radius: 20px
+}
+
+.contact-profiles {
+    grid-column: 1/-1;
+    grid-row: 3;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    justify-items: center;
+    align-items: center;
+}
+
+.contact-profiles figure {
+    max-width: 150px;
+    text-align: center;
+}
