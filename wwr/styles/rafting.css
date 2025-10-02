@@ -3,7 +3,7 @@
     --secondary-color: #622e30;
     --accent1-color: #c04647;
     --accent2-color: #3d816a;
-    --white: #f9efef;
+    --white: #f8f5f5;
     --footer-bg-color: #100f0f;
     --body-color: #1a1818;
     --heading-color: #333333;
@@ -105,7 +105,7 @@ article {
     top: 4rem;
     width: 100%;
     background-color: var(--secondary-color);
-    color: var(--accent1-color);
+    color: var(--white);
     padding: 1rem;
     text-align: center;
 }
