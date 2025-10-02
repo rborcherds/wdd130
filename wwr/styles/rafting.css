@@ -1,8 +1,10 @@
 :root {
-    --primary-color: #055a05;
-    --secondary-color: #0a8a0a;
-    --accent1-color: #f0f8f0;
-    --accent2-color: #e9c46a;
+    --primary-color: #1157ab;
+    --secondary-color: #622e30;
+    --accent1-color: #c04647;
+    --accent2-color: #3d816a;
+    --white: #f9efef;
+    --footer-bg-color: #100f0f;
     --body-color: #1a1818;
     --heading-color: #333333;
     --heading-font: Cambria,
@@ -20,15 +22,38 @@
     padding: 0;
 }
 
-header {
-    background-color: var(--primary-color);
-    color: var(--accent1-color);
-
-}
-
 body {
     font-family: var(--body-font);
     color: var(--body-color);
+}
+
+img {
+    width: 100%;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 200px auto;
+    align-items: center;
+    background-color: var(--primary-color);
+    color: var(--accent1-color);
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+}
+
+nav a {
+    color: var(--white);
+    text-decoration: none;
+    font-weight: bold;
+    padding: 1rem;
+}
+
+nav a:hover {
+    background-color: var(--white);
+    color: var(--primary-color);
 }
 
 header,
@@ -54,6 +79,10 @@ article {
 
 .socialmedia a {
     text-decoration: none;
+}
+
+.socialmedia a:hover {
+    background-color: unset;
 }
 
 .socialmedia img {
@@ -95,4 +124,43 @@ article {
     float: right;
     width: 125px;
     margin: 0 0 0 1rem;
+}
+
+.history {
+    display: grid;
+    grid-template-columns: 1fr 200px 1fr;
+    gap: 2rem 1rem;
+}
+
+.history h2 {
+    grid-column: 1 / -1;
+    /* text-align: center; */
+    justify-self: center;
+    margin-bottom: 1rem;
+}
+
+.adventures {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 2rem 1rem;
+}
+
+.adventures h2 {
+    grid-column: 1 / -1;
+    /* text-align: center; */
+    justify-self: center;
+}
+
+.adventures figure {
+    border: 2px solid var(--accent2-color);
+    padding: .5rem;
+    background-color: var(--white);
+}
+
+footer {
+    background-color: var(--footer-bg-color);
+    color: var(--white);
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    align-items: center;
 }
