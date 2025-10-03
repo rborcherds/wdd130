@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us | White Water Rafting</title>
     <meta name="description"
-      content="Learn how to contact us and get our address, phone number, and email for White Water Rafting.">
+      content="Get all the ways to contact us and learn about a few of our employees.">
     <meta name="author" content="Ralph Borcherds">
     <link rel="stylesheet" href="styles/rafting.css">
 </head>
@@ -14,7 +14,7 @@
 <body>
 
     <header>
-        <img src="images/logo.jpg" alt="White Water Rafting Logo">
+        <img src="images/logo-whitewater-200x207.webp" alt="White Water Rafting Logo">
         <nav>
             <a href="index.html">Home</a>
             <a href="about.html">About</a>
@@ -23,66 +23,71 @@
         </nav>
     </header>
 
-    <main class="contact-main">
+    <main class="contact-page">
         <section class="contact-info">
-            <h1>Whitewater Rafting Comapny</h1>
+            <h1>White Water Rafting Company</h1>
             <address>
-                123 Main Street<br>
-                Anytown, USA 12345<br>
-                <a href="tel:+11234567890">+1 (123) 456-7890</a><br>
-                <a
-                  href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#105;&#110;&#102;&#111;&#64;&#119;&#104;&#105;&#116;&#101;&#119;&#97;&#116;&#101;&#114;&#114;&#97;&#102;&#116;&#105;&#110;&#103;&#46;&#99;&#111;&#109;">email:
-                    &#105;&#110;&#102;&#111;&#064;&#119;&#104;&#105;&#116;&#101;&#119;&#097;&#116;&#101;&#114;&#114;&#097;&#102;&#116;&#105;&#110;&#103;&#046;&#099;&#111;&#109;</a>
+                123 Main River Street<br>
+                Kolob, California 90210<br>
+                <a href="tel:+19999999999">1 999 999 9999</a><br>
+                <a href="mailto:info@whitewater.com">info@whitewater.com</a>
             </address>
+
         </section>
         <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2785.0990847449675!2d-111.7842229582813!3d43.81829287517124!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x53540bdb747be8e9%3A0x4bb8b6eccf613b73!2sBYU-Idaho!5e1!3m2!1sen!2sus!4v1759422801769!5m2!1sen!2sus"
-          width="400" height="300" class="gmap" allowfullscreen="" loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"></iframe>
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6659.501273883792!2d-111.78455365448865!3d43.813512549131836!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x53540b03dc48a5cf%3A0x1e5534d3c38ef412!2sBrigham%20Young%20University-Idaho!5e1!3m2!1sen!2sus!4v1759462201987!5m2!1sen!2sus"
+          width="500" height="400" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade" class="gmap"></iframe>
+        <section class="employees">
+            <h2>We Are Here to Serve You</h2>
+            <figure class="employee">
+                <img src="images/man-640x584.webp" alt="Mad Max, CEO">
+                <figcaption>Mad Max - CEO</figcaption>
 
-        <section class="contact-profiles">
-            <figure>
-                <img src="images/cartoon-1890438_640.jpg" alt="CEO Max">
-                <figcaption>Mad Max, CEO</figcaption>
             </figure>
-            <figure>
-                <img src="images/woman-5212479_640.png" alt="Jane Doe, Sales">
-                <figcaption>Jane, VP Sales </figcaption>
+            <figure class="employee">
+                <img src="images/woman-5212479_640.webp" alt="Jane Smith">
+                <figcaption>Jane Smith - Safety Officer</figcaption>
+
             </figure>
-            <figure>
-                <img src="images/woman-6871495_640.jpg" alt="Stacy Tour Guie">
-                <figcaption>Stacy, River Tour Guide</figcaption>
+            <figure class="employee">
+                <img src="images/woman-6871495_640.webp" alt="Stacy Smith - Tour Guide">
+                <figcaption>Stacy Smith - Tour Guide</figcaption>
+
             </figure>
         </section>
         <form action="#" class="contact-form">
-            <fieldset class="contact-name">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required placeholder="Your full name">
 
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required placeholder="Your email address">
 
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-            </fieldset>
+            <div class="purpose">
+                <p>Message Purpose:</p>
+                <fieldset>
 
-            <fieldset class="contact-purpose">
-                <legend>Message Purpose:</legend>
-                <input type="radio" name="purpose" id="inquiry" value="inquiry">
-                <label for="inquiry">General Inquiry</label>
-                <input type="radio" name="purpose" id="reservation" value="reservation">
-                <label for="reservation">Reservation Inquiry</label>
-                <input type="radio" name="purpose" id="suggestion" value="suggestion">
-                <label for="suggestion">Website Suggestion</label>
-            </fieldset>
+                    <input id="inquiry" type="radio" name="purpose" value="inquiry" required>
+                    <label for="inquiry">General Inquiry</label>
 
+                    <input id="reservation" type="radio" name="purpose" value="reservation">
+                    <label for="reservation">Reservation Question</label>
 
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" rows="4" required></textarea>
+                    <input id="feedback" type="radio" name="purpose" value="feedback">
+                    <label for="feedback">Website Suggestion</label>
+                </fieldset>
 
-            <fieldset class="contact-newsletter">
-                <input type="checkbox" name="subscribe" id="subscribe">
-                <label for="subscribe">Subscribe to our Monthly newsletter</label>
-            </fieldset>
-            <button type="submit" class="btn-submit">Get in Touch!</button>
+            </div>
+            <div class="full-w">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required
+                  placeholder="Your message"></textarea>
+            </div>
+            <div class="subscribe">
+                <input type="checkbox" id="subscribe" name="subscribe" value="yes">
+                <label for="subscribe">Subscribe to our newsletter</label>
+            </div>
+            <button type="submit" class="btn btn-submit">Get in Touch!</button>
         </form>
 
     </main>
@@ -90,11 +95,11 @@
         <p>&copy; 2025 White Water Rafting | Ralph Borcherds</p>
         <nav class="socialmedia">
             <a href="https://www.facebook.com" target="_blank" rel="noopener"><img
-                  src="images/facebook.svg" alt="Facebook Logo"></a>
+                  src="images/facebook-150x150.svg" alt="Facebook Logo"></a>
             <a href="https://www.x.com" target="_blank" rel="noopener"><img
                   src="images/x-twiiter.svg" alt="X Logo"></a>
             <a href="https://www.instagram.com" target="_blank" rel="noopener"><img
-                  src="images/instagram-square.svg" alt="Instagram Logo"></a>
+                  src="images/instagram-square-150x150.svg" alt="Instagram Logo"></a>
         </nav>
     </footer>
 </body>
