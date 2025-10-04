@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us | White Water Rafting</title>
     <meta name="description"
-      content="Learn more about White Water Rafting, our mission, and our team dedicated to providing thrilling rafting experiences.">
+      content="Learn about White Water Rafting, our mission, values, and the team dedicated to providing you with unforgettable rafting adventures.">
     <meta name="author" content="Ralph Borcherds">
     <link rel="stylesheet" href="styles/rafting.css">
 </head>
@@ -14,7 +14,8 @@
 <body>
 
     <header>
-        <img src="images/logo-ww-200x207.webp" alt="White Water Rafting Logo">
+        <a href="" class="logo-link"><img src="images/logo-ww-200x207.webp"
+              alt="White Water Rafting company logo"></a>
         <nav>
             <a href="index.html">Home</a>
             <a href="about.html">About</a>
@@ -25,10 +26,11 @@
 
     <main>
         <div class="hero">
-            <img src="images/rafting60-1024x683.webp" alt="White Water Rafting Hero Image">
+            <img src="images/rafting60-1024x683.webp"
+              alt="Group of rafters navigating white-water rapids on a sunny day">
             <h1>White Water Rafting</h1>
             <article>
-                <img src="images/rafting58-600x400.webp" alt="White Water Rafting river">
+                <img src="images/rafting58-600x400.webp" alt="Rafters on a river with rocky banks">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe impedit in numquam
                     quam magni quos ipsum aspernatur dolorum? Vitae harum officiis reiciendis in,
                     sed neque animi doloremque perferendis exercitationem minima.</p>
@@ -39,7 +41,8 @@
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe impedit in numquam
                 quam magni quos ipsum aspernatur dolorum? Vitae harum officiis reiciendis in, sed
                 neque animi doloremque perferendis exercitationem minima.</p>
-            <img src="images/havasu-500x667.webp" alt="Havasu Falls">
+            <img src="images/havasu-500x667.webp"
+              alt="Havasu Falls cascading turquoise water over red rock cliffs">
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem nesciunt
                 reprehenderit enim rerum, beatae, quis incidunt dolore, eveniet explicabo obcaecati
                 laborum magnam dignissimos? Dolore, quibusdam quam saepe autem dolor est?</p>
@@ -47,37 +50,52 @@
         <section class="adventures">
             <h2>Adventures</h2>
             <figure>
-                <img src="images/rafting1-600x400.webp" alt="Rafting Adventure 1">
+                <img src="images/rafting1-600x400.webp"
+                  alt="Rafters paddling through turbulent rapids">
                 <figcaption>Rafting Adventure 1</figcaption>
             </figure>
             <figure>
-                <img src="images/rafting2-600x400.webp" alt="Rafting Adventure 2">
+                <img src="images/rafting2-600x400.webp"
+                  alt="Group enjoying a calm section of the river">
                 <figcaption>Rafting Adventure 2</figcaption>
             </figure>
             <figure>
-                <img src="images/rafting4-600x400.webp" alt="Rafting Adventure 3">
+                <img src="images/rafting4-600x400.webp"
+                  alt="Rafting team paddling through white water">
                 <figcaption>Rafting Adventure 3</figcaption>
             </figure>
             <figure>
-                <img src="images/rafting19-600x400.webp" alt="Rafting Adventure 4">
+                <img src="images/rafting19-600x400.webp"
+                  alt="Rafters navigating a swift river bend">
                 <figcaption>Rafting Adventure 4</figcaption>
             </figure>
             <figure>
-                <img src="images/rafting20-600x400.webp" alt="Rafting Adventure 5">
+                <img src="images/rafting20-600x400.webp"
+                  alt="Five-person raft moving through rapids">
                 <figcaption>Rafting Adventure 5</figcaption>
             </figure>
         </section>
     </main>
     <footer>
-        <p>&copy; 2025 White Water Rafting | Ralph Borcherds</p>
-        <nav class="socialmedia">
-            <a href="https://www.facebook.com" target="_blank" rel="noopener"><img
-                  src="images/facebook-150x150.svg" alt="Facebook Logo"></a>
-            <a href="https://www.x.com" target="_blank" rel="noopener"><img
-                  src="images/x-white-1200x1227.svg" alt="X Logo"></a>
-            <a href="https://www.instagram.com" target="_blank" rel="noopener"><img
-                  src="images/insta-square-150x150.svg" alt="Instagram Logo"></a>
-        </nav>
+        <p>&copy; <span id="demo"></span> Dry Oar | Ralph Borcherds | Dry Oar Rafting</p>
+        <!-- <a href="#open-modal" class="footer-menu">Wireframe</a> -->
+        <div class="socialmedia">
+            <a href="https://facebook.com" target="_blank">
+                <img src="images/facebook-150x150.svg"
+                  alt="Follow us on Facebook (opens in new tab)">
+            </a>
+            <a href="https://twitter.com" target="_blank">
+                <img src="images/x-white-1200x1227.svg" alt="Follow us on X (opens in new tab)">
+            </a>
+            <a href="https://instagram.com" target="_blank">
+                <img src="images/insta-round-150x150.svg"
+                  alt="Follow us on Instagram (opens in new tab)">
+            </a>
+        </div>
     </footer>
+    <script>
+        const date = new Date(document.lastModified);
+        document.getElementById("demo").innerHTML = date.getFullYear();
+    </script>
 </body>
 </html>
