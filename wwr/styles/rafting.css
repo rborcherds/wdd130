@@ -46,9 +46,10 @@
     --nav-hover-background-color: #fff;
 
     /* Font for headings */
-    --heading-font: 'Arvo', 'sans-serif';
+    --heading-font: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
     /* Font for paragraphs */
-    --paragraph-font: 'Oswald', 'sans-serif';
+    --paragraph-font: Arial, Helvetica, sans-serif;
 }
 
 * {
@@ -147,18 +148,13 @@ nav {
     justify-content: space-around;
 }
 
-nav a:hover {
-    background-color: var(--white);
-    color: var(--primary-color);
-}
-
 .home-link {
     display: contents;
 }
 
 .navitem {
     padding: 1rem;
-    font-size: 1.25rem;
+    font-size: 1.5rem;
     font-family: var(--heading-font);
     color: #fff;
     display: flex;
