@@ -525,7 +525,7 @@ footer p {
 .abs-article {
     background-color: rgba(255, 255, 255, .35);
     position: absolute;
-    top: 6rem;
+    bottom: 3rem;
     left: 6rem;
     right: 6rem;
 }

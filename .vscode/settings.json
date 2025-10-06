@@ -38,5 +38,10 @@
     // "git.postCommitCommand": "sync",
     "scm.defaultViewMode": "list",
     "scm.repositories.visible": 0,
-    "git.enableCommitSigning": true
+    "git.enableCommitSigning": true,
+    "cSpell.words": [
+        "gmap",
+        "Kolob",
+        "socialmedia"
+    ]
 }
