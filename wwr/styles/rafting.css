@@ -595,7 +595,7 @@ footer p {
     justify-items: center;
 }
 
-.history h2,
+.history-section h2,
 .adventures h2 {
     grid-column: 1/-1;
     justify-self: center;
@@ -626,7 +626,7 @@ figcaption {
     padding: 1em 0;
 }
 
-.history {
+.history-section {
     display: grid;
     grid-template-columns: 2fr 1fr 2fr;
     gap: 2em;
