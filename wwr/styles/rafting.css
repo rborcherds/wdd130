@@ -1,55 +1,55 @@
 /* Root CSS variables for easy theme management */
 :root {
 
-    /* Dark color for primary text */
+    /* Color Theme */
     --primary-color: #1157ab;
-
-    /* Secondary color, slightly lighter */
     --secondary-color: #622E30;
-
-    /* Accent color 1 */
     --accent1-color: #7e2d2d;
-
-    /* Accent color 2 */
     --accent2-color: #225242;
-
-    /* Accent color 3 */
     --accent3-color: #624d1c;
-
-    /* Accent color 4 */
     --accent4-color: #b0e6fc;
-
-    /* White color */
+    --accent5-color: #6f7364;
     --white: #fff6f6;
-
-    /* Black color */
     --black: #0e0c0c;
+    --light-gray: #e1e1e1;
+    --focus-red: #d81616;
+    --focus-green: #1cfc63;
+    --focus-gray: #3f3f3f;
+    --footer-background-color: #242321;
+    --hero-text-background-color: rgba(56, 59, 103, 0.6);
+    --button-border-color: #3e3e3e;
+    --button-shadow-color: #0d0c0c;
+    --table-background-color-odd: #d9d5d5;
+    --table-background-color-even: #ccc3ef;
 
-    /* Button Background colors */
+    /* Standard Button colors */
     --button-background-color: #00d148;
     --button-color: #0e1e20;
     --button-color-hover: #f3a530;
 
+    /* CTA Button colors */
     --cta-button-color: #f2f2f2;
     --cta-button-background-color: #912727;
     --cta-button-color-hover: #04083e;
     --cta-button-background-color-hover: #f3a530;
 
     /* Top Navigation Colors */
-    /* Background color for navigation bar */
     --nav-background-color: var(--primary-color);
-    /* Color for navigation links */
     --nav-link-color: var(--white);
-    /* Hover color for links */
     --nav-hover-link-color: var(--primary-color);
-    /* Background color on hover for navigation links */
     --nav-hover-background-color: var(--white);
 
-    /* Font for headings */
+    /* Fonts for all pages */
     --heading-font: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-
-    /* Font for paragraphs */
     --paragraph-font: Arial, Helvetica, sans-serif;
+
+    /* Box Shadow Colors */
+    --box-shadow: 0 100px 80px rgba(0, 0, 0, 0.089),
+        0 41.7776px 33.4221px rgba(0, 0, 0, .215656),
+        0 22.3363px 17.869px rgba(0, 0, 0, .178832),
+        0 12.5216px 10.0172px rgba(0, 0, 0, .15),
+        0 6.6501px 5.32008px rgba(0, 0, 0, .121168),
+        0 2.76726px 2.21381px rgba(0, 0, 0, .0843437);
 }
 
 * {
@@ -107,7 +107,7 @@ h6 {
 
 p {
     padding: 10px;
-    color: #000;
+    color: var(--black);
 }
 
 img {
@@ -173,17 +173,17 @@ footer {
     grid-template-columns: 3fr 1fr 1fr;
     align-items: center;
     padding: 1rem;
-    background-color: #242321;
+    background-color: var(--footer-background-color);
     margin-top: 100px;
 }
 
 /* Footer Styling */
 footer p {
-    color: #fff;
+    color: var(--white);
 }
 
 .footer-menu {
-    color: #fff;
+    color: var(--white);
 }
 
 /* Social media link styling */
@@ -279,19 +279,19 @@ footer p {
 }
 
 .home-title {
-    /* margin: 1rem 0; */
+    margin: 1rem 0;
     color: var(--white);
-    background-color: #13181475;
+    background-color: var(--hero-text-background-color);
     justify-self: center;
     min-width: 50rem;
     text-align: center;
-    line-height: 6rem;
+    line-height: 3rem;
 }
 
 .home-subtitle {
     /* margin: 20px 0; */
     color: var(--white);
-    background-color: #13181475;
+    background-color: var(--hero-text-background-color);
     justify-self: center;
 }
 
@@ -309,6 +309,7 @@ footer p {
     background-color: var(--accent3-color);
     padding: 0 2em;
     border-radius: 1.5em;
+    box-shadow: var(--box-shadow);
 }
 
 .newsletter-form {
@@ -380,11 +381,10 @@ footer p {
 }
 
 .card-img {
-    border: 10px solid #fff;
+    border: 10px solid var(--white);
     width: 100%;
     transition: transform .5s;
-    box-shadow: 5px 5px 10px #6f7364;
-    margin: 20px 0;
+    box-shadow: var(--box-shadow) margin: 20px 0;
 }
 
 .card-img:hover {
@@ -418,7 +418,7 @@ footer p {
     color: var(--white);
     background-color: var(--accent4-color);
     padding: 35px;
-    box-shadow: 5px 5px 10px #6f7364;
+    box-shadow: var(--box-shadow);
     line-height: 1.5em;
     display: flex;
     flex-direction: column;
@@ -517,9 +517,9 @@ footer p {
     top: 10px;
     width: 100%;
     text-align: center;
-    color: #fff;
-    background-color: rgba(56, 59, 103, 0.6);
-    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    color: var(--white);
+    background-color: var(--hero-text-background-color);
+    text-shadow: -1px -1px 0 var(--black), 1px -1px 0 var(--black), -1px 1px 0 var(--black), 1px 1px 0 var(--black);
 }
 
 .abs-article,
@@ -539,8 +539,8 @@ footer p {
 }
 
 .abs-article p {
-    color: #1e1a1a;
-    /* text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000; */
+    color: var(--black);
+    /* text-shadow: -1px -1px 0 var(--black), 1px -1px 0 var(--black), -1px 1px 0 var(--black), 1px 1px 0 var(--black); */
     font-size: x-large;
     text-align: center;
 }
@@ -789,9 +789,9 @@ input[type="checkbox"] {
 input:focus,
 textarea:focus,
 select:focus {
-    border: 1px solid #d81616;
-    background-color: #1cfc63;
-    color: #3f3f3f;
+    border: 1px solid var(--focus-red);
+    background-color: var(--focus-green);
+    color: var(--focus-gray);
 }
 
 .submit {
@@ -799,8 +799,8 @@ select:focus {
     margin: 1em;
     background-color: var(--button-background-color);
     color: var(--button-color);
-    border: 1px solid #3e3e3e;
-    box-shadow: 5px 3px 3px #000;
+    border: 1px solid var(--button-border-color);
+    box-shadow: var(--box-shadow);
     border-radius: 25px;
     font-size: 20px;
     letter-spacing: 2px;
@@ -855,13 +855,13 @@ select:focus {
 .trip-cost:nth-of-type(even),
 .trip-duration:nth-of-type(odd),
 .trip-name:nth-of-type(odd) {
-    background-color: #d9d5d5;
+    background-color: var(--table-background-color-odd);
 }
 
 .trip-cost:nth-of-type(odd),
 .trip-duration:nth-of-type(even),
 .trip-name:nth-of-type(even) {
-    background-color: #ccc3ef;
+    background-color: var(--table-background-color-even);
 }
 
 .table-heading {
@@ -873,19 +873,14 @@ select:focus {
 
 .trips {
     gap: 50px;
-    background-color: #e1e1e1;
+    background-color: var(--light-gray);
     padding: clamp(1.25rem, 0.8014018692rem + 0.9345794393vw, 1.625rem) clamp(1.25rem, 0.3528037383rem + 1.8691588785vw, 2rem) 0;
 }
 
 .trips-card {
     border-radius: 1.25rem;
     background-color: var(--white);
-    box-shadow: 0 100px 80px rgba(0, 0, 0, 0.089),
-        0 41.7776px 33.4221px rgba(0, 0, 0, .215656),
-        0 22.3363px 17.869px rgba(0, 0, 0, .178832),
-        0 12.5216px 10.0172px rgba(0, 0, 0, .15),
-        0 6.6501px 5.32008px rgba(0, 0, 0, .121168),
-        0 2.76726px 2.21381px rgba(0, 0, 0, .0843437);
+    box-shadow: var(--box-shadow);
 }
 
 .trips-card img {
