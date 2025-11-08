@@ -37,13 +37,13 @@
 
     /* Top Navigation Colors */
     /* Background color for navigation bar */
-    --nav-background-color: var(--accent2-color);
+    --nav-background-color: var(--primary-color);
     /* Color for navigation links */
-    --nav-link-color: #fff;
+    --nav-link-color: var(--white);
     /* Hover color for links */
-    --nav-hover-link-color: var(--accent2-color);
+    --nav-hover-link-color: var(--primary-color);
     /* Background color on hover for navigation links */
-    --nav-hover-background-color: #fff;
+    --nav-hover-background-color: var(--nav-hover-link-color);
 
     /* Font for headings */
     --heading-font: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -146,6 +146,7 @@ header {
 nav {
     display: flex;
     justify-content: space-around;
+    background-color: var(--nav-background-color);
 }
 
 .home-link {
@@ -156,7 +157,7 @@ nav {
     padding: 1rem;
     font-size: 1.5rem;
     font-family: var(--heading-font);
-    color: #fff;
+    color: var(--nav-link-color);
     display: flex;
     align-items: center;
 }
