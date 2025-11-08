@@ -508,7 +508,8 @@ footer p {
 *
 ****************************************/
 
-.abs-heading1 {
+.abs-heading1,
+.hero h1 {
     position: absolute;
     top: 10px;
     width: 100%;
@@ -518,7 +519,8 @@ footer p {
     text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
 
-.abs-article {
+.abs-article,
+.hero article {
     background-color: rgba(255, 255, 255, .35);
     position: absolute;
     bottom: 3rem;
@@ -526,7 +528,8 @@ footer p {
     right: 6rem;
 }
 
-.abs-article img {
+.abs-article img,
+.hero article img {
     float: right;
     margin: 2rem;
     width: 15rem;
