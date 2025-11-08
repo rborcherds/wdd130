@@ -3,7 +3,7 @@
 
     /* Color Theme */
     --primary-color: #1157ab;
-    --secondary-color: #622E30;
+    --secondary-color: #622e30;
     --accent1-color: #7e2d2d;
     --accent2-color: #225242;
     --accent3-color: #624d1c;
@@ -15,7 +15,8 @@
     --focus-green: #1cfc63;
     --focus-gray: #3f3f3f;
     --footer-background-color: #242321;
-    --hero-text-background-color: rgba(56, 59, 103, 0.6);
+
+    --transparent-background-color: #383b6799;
 
     --table-background-color-odd: #d9d5d5;
     --table-background-color-even: #ccc3ef;
@@ -49,6 +50,7 @@
         0 12.5216px 10.0172px rgba(0, 0, 0, .15),
         0 6.6501px 5.32008px rgba(0, 0, 0, .121168),
         0 2.76726px 2.21381px rgba(0, 0, 0, .0843437);
+
 }
 
 * {
@@ -281,7 +283,7 @@ footer p {
 .home-title {
     margin: 1rem 0;
     color: var(--white);
-    background-color: var(--hero-text-background-color);
+    background-color: var(--transparent-background-color);
     justify-self: center;
     min-width: 50rem;
     text-align: center;
@@ -291,7 +293,7 @@ footer p {
 .home-subtitle {
     /* margin: 20px 0; */
     color: var(--white);
-    background-color: var(--hero-text-background-color);
+    background-color: var(--transparent-background-color);
     justify-self: center;
 }
 
@@ -447,7 +449,7 @@ footer p {
 
 .modal-window {
     position: fixed;
-    background-color: rgba(255, 255, 255, 0.25);
+    background-color: var(--transparent-background-color);
     top: 0;
     right: 0;
     bottom: 0;
@@ -474,7 +476,7 @@ footer p {
     bottom: 30px;
     transform: translateX(-50%);
     padding: 2em;
-    background: white;
+    background: var(--white);
 }
 
 .modal-window img {
@@ -516,13 +518,13 @@ footer p {
     width: 100%;
     text-align: center;
     color: var(--white);
-    background-color: var(--hero-text-background-color);
+    background-color: var(--transparent-background-color);
     text-shadow: -1px -1px 0 var(--black), 1px -1px 0 var(--black), -1px 1px 0 var(--black), 1px 1px 0 var(--black);
 }
 
 .abs-article,
 .hero article {
-    background-color: rgba(255, 255, 255, .35);
+    background-color: var(--transparent-background-color);
     position: absolute;
     bottom: 3rem;
     left: 6rem;
