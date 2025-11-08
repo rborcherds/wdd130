@@ -8,7 +8,6 @@
     --accent2-color: #225242;
     --accent3-color: #624d1c;
     --accent4-color: #b0e6fc;
-    --accent5-color: #6f7364;
     --white: #fff6f6;
     --black: #0e0c0c;
     --light-gray: #e1e1e1;
@@ -17,8 +16,7 @@
     --focus-gray: #3f3f3f;
     --footer-background-color: #242321;
     --hero-text-background-color: rgba(56, 59, 103, 0.6);
-    --button-border-color: #3e3e3e;
-    --button-shadow-color: #0d0c0c;
+
     --table-background-color-odd: #d9d5d5;
     --table-background-color-even: #ccc3ef;
 
@@ -26,6 +24,7 @@
     --button-background-color: #00d148;
     --button-color: #0e1e20;
     --button-color-hover: #f3a530;
+    --button-border-color: #3e3e3e;
 
     /* CTA Button colors */
     --cta-button-color: #f2f2f2;
@@ -174,6 +173,7 @@ footer {
     align-items: center;
     padding: 1rem;
     background-color: var(--footer-background-color);
+    color: var(--white);
     margin-top: 100px;
 }
 
@@ -384,7 +384,8 @@ footer p {
     border: 10px solid var(--white);
     width: 100%;
     transition: transform .5s;
-    box-shadow: var(--box-shadow) margin: 20px 0;
+    box-shadow: var(--box-shadow);
+    margin: 20px 0;
 }
 
 .card-img:hover {
