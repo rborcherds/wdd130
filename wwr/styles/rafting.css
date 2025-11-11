@@ -511,7 +511,6 @@ footer p {
 *
 ****************************************/
 
-.abs-heading1,
 .hero h1 {
     position: absolute;
     top: 10px;
@@ -522,7 +521,6 @@ footer p {
     text-shadow: -1px -1px 0 var(--black), 1px -1px 0 var(--black), -1px 1px 0 var(--black), 1px 1px 0 var(--black);
 }
 
-.abs-article,
 .hero article {
     background-color: var(--transparent-background-color);
     position: absolute;
@@ -531,18 +529,17 @@ footer p {
     right: 6rem;
 }
 
-.abs-article img,
 .hero article img {
     float: right;
     margin: 2rem;
     width: 15rem;
 }
 
-.abs-article p {
-    color: var(--black);
+.hero article p {
+    color: var(--white);
     /* text-shadow: -1px -1px 0 var(--black), 1px -1px 0 var(--black), -1px 1px 0 var(--black), 1px 1px 0 var(--black); */
     font-size: x-large;
-    text-align: center;
+    text-align: left;
 }
 
 .history-section {
