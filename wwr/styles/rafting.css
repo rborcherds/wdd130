@@ -542,45 +542,10 @@ footer p {
 .history-section {
     margin: 50px 0;
     display: grid;
-    grid-template-columns: 2fr 1fr 2fr;
     /* This creates three columns */
-    gap: 2em;
+    grid-template-columns: 2fr 1fr 2fr;
     /* This is the gap between columns */
-    align-items: center;
-    text-align: justify;
-}
-
-.history-img {
-    grid-column: 2 / 3;
-    grid-row: 2;
-    /* This places the image in the center column */
-}
-
-.history-section p:first-of-type {
-    grid-column: 1 / 2;
-    grid-row: 2;
-    /* This places the first paragraph in the left column */
-    padding: 0 20px;
-    /* Add padding for better text readability */
-}
-
-.history-section p:last-of-type {
-    grid-column: 3 / 4;
-    grid-row: 2;
-    /* This places the second paragraph in the right column */
-    padding: 0 20px;
-    /* Add padding for better text readability */
-}
-
-/* Ensure the h2 is full-width above the columns */
-.history-section > h2 {
-    grid-column: 1 / -1;
-    grid-row: 1;
-    /* This spans the h2 across all columns */
-    text-align: center;
-    /* Center the text of the h2 */
-    padding-bottom: 1rem;
-    /* Add some space below the h2 */
+    gap: 2em;
 }
 
 .adventures {
