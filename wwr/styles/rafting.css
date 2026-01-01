@@ -50,7 +50,7 @@
         -10px 0px 10px 5px rgba(0, 0, 0, .23)
 }
 
-* {
+*, *::before, *::after {
     margin: 0;
     padding: 0;
     box-sizing: border-box;

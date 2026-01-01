@@ -1,7 +1,7 @@
 {
     // Editor settings
     "editor.fontSize": 18,
-    "window.zoomLevel": 1,
+    "window.zoomLevel": 0,
     "editor.formatOnSave": true,
     "editor.formatOnPaste": true,
     "editor.defaultFormatter": "vscode.html-language-features",
@@ -9,10 +9,18 @@
     "css.format.enable": true,
     "css.format.maxPreserveNewLines": 2,
     "css.format.spaceAroundSelectorSeparator": true,
+    "css.format.newlineBetweenRules": true,
+    "css.format.newlineBetweenSelectors": true,
+    "[css]": {
+        "editor.defaultFormatter": "vscode.css-language-features",
+    },
     "html.format.enable": true,
     "html.format.maxPreserveNewLines": 2,
     "html.format.wrapLineLength": 100,
     "html.format.wrapAttributesIndentSize": 2,
+    "[html]": {
+        "editor.defaultFormatter": "vscode.html-language-features",
+    },
     // Explorer settings - show only folders view
     "explorer.fileNesting.enabled": true,
     "explorer.fileNesting.expand": false,
@@ -38,7 +46,9 @@
     // "git.postCommitCommand": "sync",
     "scm.defaultViewMode": "list",
     "scm.repositories.visible": 0,
+    // Enable commit signing if you use GPG keys or SSH keys
     "git.enableCommitSigning": true,
+    // Spell Checker settings
     "cSpell.words": [
         "gmap",
         "Kolob",
