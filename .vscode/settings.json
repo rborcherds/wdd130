@@ -55,5 +55,7 @@
         "socialmedia"
     ],
     "cSpell.language": "en",
-    "cSpell.enabled": true
+    "cSpell.enabled": true,
+    "fiveServer.host": "127.0.0.1",
+    "fiveServer.navigate": true
 }
