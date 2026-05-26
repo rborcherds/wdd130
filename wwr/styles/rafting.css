@@ -1,6 +1,5 @@
 /* Root CSS variables for easy theme management */
 :root {
-
     /* Color Theme */
     --primary-color: #1157ab;
     --secondary-color: #622e30;
@@ -50,7 +49,9 @@
         -10px 0px 10px 5px rgba(0, 0, 0, .23)
 }
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -299,8 +300,6 @@ footer p {
 }
 
 .newsletter {
-    grid-column: 4/11;
-    grid-row: 7/9;
     justify-self: center;
     justify-items: center;
     display: flex;
