@@ -57,5 +57,8 @@
     "cSpell.language": "en",
     "cSpell.enabled": true,
     "fiveServer.host": "127.0.0.1",
-    "fiveServer.navigate": true
+    "fiveServer.navigate": true,
+    "chat.agent.enabled": true,
+    "chat.includeReferencedInstructions": true,
+    "chat.useAgentsMdFile": true
 }
