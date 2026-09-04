@@ -1,4 +1,6 @@
 {
+    // Enable commit signing if you use GPG keys or SSH keys
+    "git.enableCommitSigning": true,
     // Editor settings
     "editor.fontSize": 18,
     "window.zoomLevel": 1,
