@@ -62,5 +62,8 @@
     "fiveServer.navigate": true,
     "chat.agent.enabled": true,
     "chat.includeReferencedInstructions": true,
-    "chat.useAgentsMdFile": true
+    "chat.useAgentsMdFile": true,
+    // VS Code 1.106.x, Copilot Chat 1.375+
+    "github.copilot.chat.codeGeneration.useInstructionFiles": true,
+    "chat.useClaudeMdFile": true
 }
