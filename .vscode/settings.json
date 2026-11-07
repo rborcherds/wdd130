@@ -3,7 +3,7 @@
     "git.enableCommitSigning": true,
     // Editor settings
     "editor.fontSize": 18,
-    "window.zoomLevel": 1,
+    "window.zoomLevel": 2,
     "editor.formatOnSave": true,
     "editor.formatOnPaste": true,
     "editor.defaultFormatter": "vscode.html-language-features",
