@@ -17,23 +17,30 @@ div {
 }
 
 .one {
-    width: 200px;
-    height: 200px;
+    width: 300px;
+    height: 300px;
 }
 
 .flex {
     background-color: #aba;
+    align-content: center;
+    justify-items: center;
     /* write declarations here */
 
 }
 
 .grid {
     background-color: #abb;
+    align-content: center;
+    justify-items: center;
     /* enter declarations here */
 
 }
 
 .container2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: space-evenly;
     /* write declarations here */
 
 }
@@ -45,12 +52,14 @@ div {
 
 .container3 {
     /* write declarations here */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
 
 }
 
 .columns-3 {
     /* write declaration here */
-
+    grid-column: span 3;
 }
 
 .three {
